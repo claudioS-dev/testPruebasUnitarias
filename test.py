@@ -40,7 +40,7 @@ def test_registrar_datos(sistema):
 
 @pytest.mark.parametrize("dato_invalido", [
     "no es un diccionario",
-    {'temperatura_c': 25.0},  # Faltan campos
+    {'temperatura_c': 25.0},  # Faltan campos.
     None
 ])
 def test_registrar_datos_invalidos(sistema, dato_invalido):
